@@ -1,0 +1,27 @@
+[[books]]
+title = "पॉडकास्टिंग कैसे करें? How to launch your own Podcast?"
+description = "Whether you are a student, a professional, a homemaker, or a retiree, this book gives you everything you need to launch and grow your own podcast with confidence."
+cover = "/images/other-books/podcasting-guide-cover.jpg"
+buyUrl = "https://www.amazon.in/dp/9334292393"
+price = "₹399"
+
+[[books]]
+title = "Crafting Winning Resumes"
+description = "A practical, no-fluff guide that teaches IT professionals how to build resumes that pass ATS filters, impress hiring managers, and open doors to global opportunities."
+cover = "/images/other-books/crafting-winning-resume-cover.jpg"
+buyUrl = "https://topmate.io/debashishc/1302753/pay"
+price = "₹250"
+
+[[books]]
+title = "Cracking Amazon's Behavioral Interviews"
+description = "Don't let the complexity of Amazon's LPs hold you back. Unlock the roadmap to mastering Amazon's behavioral interviews and set yourself apart from the competition."
+cover = "/images/other-books/cracking-amazon-interview.jpg"
+buyUrl = "https://amzn.in/d/h0P93uP"
+price = "₹350"
+
+[[books]]
+title = "The PSPO-I Certification Study Guide for Diligent Professionals"
+description = "COMING SOON!"
+cover = "/images/other-books/pspo-study-guide.jpg"
+buyUrl = ""
+price = ""

@@ -1,0 +1,3 @@
+[submodule "themes/book-landing-hugo-theme"]
+	path = themes/book-landing-hugo-theme
+	url = https://github.com/dchucks/book-landing-hugo-theme

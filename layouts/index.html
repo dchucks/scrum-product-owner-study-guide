@@ -1,0 +1,215 @@
+{{ define "main" }}
+
+<!-- ══════════════════════════ HERO -->
+<section id="home" class="spo-hero">
+  <div class="container">
+    <div class="spo-hero-grid">
+      <div class="spo-hero-content">
+        <span class="spo-eyebrow">Certification Study Guide</span>
+        <h1 class="spo-hero-title">
+          Scrum Product Owner<br>
+          Certification<br>
+          Study Guide
+        </h1>
+        <p class="spo-hero-subtitle">A Structured Path to Certification Success and Professional Excellence</p>
+        <p class="spo-hero-desc">
+          The Scrum Product Owner certification is widely recognized as a strong validation of your ability to act as the strategic brain behind a product. To succeed in a complex, empirical world, you must bridge the &ldquo;Product Management Vacuum&rdquo; by mastering the &ldquo;Three Vs&rdquo;: Vision, Value, and Validation.
+        </p>
+        <p class="spo-isbn">{{ .Site.Params.isbn }}</p>
+        <div class="spo-ctas">
+          <a href="#buy-now" class="spo-btn spo-btn-primary">Get Your Copy</a>
+          <a href="#what-inside" class="spo-btn spo-btn-outline">What&rsquo;s Inside</a>
+        </div>
+      </div>
+      <div class="spo-book-wrap">
+        <img
+          src="{{ "images/book-cover.png" | relURL }}"
+          alt="Scrum Product Owner Certification Study Guide book cover"
+          class="spo-book-img"
+        />
+        <span class="spo-book-badge">With Full-Length Practice Test</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ FEATURES / ABOUT -->
+<section id="about-book" class="spo-section spo-section-alt">
+  <div class="container">
+    <div class="spo-section-header">
+      <p class="spo-section-eyebrow">Why This Guide</p>
+      <h2 class="spo-section-title">Stop Going Through the Motions.<br>Start Maximizing Value.</h2>
+      <p class="spo-section-sub">A high-impact, practitioner-led roadmap that bypasses excessive theory to focus on the core competencies required to lead as a professional Scrum Product Owner.</p>
+    </div>
+    <div class="spo-features-grid">
+      {{ range .Site.Data.features.features }}
+      <div class="spo-feature-card">
+        <div class="spo-feature-icon">{{ .icon }}</div>
+        <h3 class="spo-feature-title">{{ .title }}</h3>
+        <p class="spo-feature-desc">{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ WHAT'S INSIDE -->
+<section id="what-inside" class="spo-section">
+  <div class="container">
+    <div class="spo-section-header">
+      <p class="spo-section-eyebrow">Inside the Guide</p>
+      <h2 class="spo-section-title">Everything You Need.<br>Nothing You Don&rsquo;t.</h2>
+    </div>
+    <div class="spo-inside-grid">
+      <div>
+        <p class="spo-inside-intro">Inside, you&rsquo;ll find the tools to master both the exam and the role:</p>
+        <ul class="spo-inside-list">
+          {{ range .Site.Data.whats_inside.items }}
+          <li class="spo-inside-item">
+            <div class="spo-inside-bullet"></div>
+            <div>
+              <div class="spo-inside-item-title">{{ .title }}</div>
+              <div class="spo-inside-item-desc">{{ .description }}</div>
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div>
+        <div class="spo-audience-box">
+          <h3 class="spo-audience-title">Perfect For</h3>
+          <ul class="spo-audience-list">
+            {{ range .Site.Data.whats_inside.audiences }}
+            <li>
+              <span class="spo-audience-role">{{ .role }}</span>
+              <span class="spo-audience-desc">{{ .description }}</span>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="spo-stat-box">
+          <p class="spo-stat-number">85%</p>
+          <p class="spo-stat-label">Practice test mirrors the actual exam passing score difficulty</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ TESTIMONIALS -->
+<section id="testimonials" class="spo-section spo-section-alt">
+  <div class="container">
+    <div class="spo-section-header">
+      <p class="spo-section-eyebrow">Reader Reviews</p>
+      <h2 class="spo-section-title">What Readers Are Saying</h2>
+    </div>
+    <div class="spo-testimonials-grid">
+      {{ range .Site.Data.testimonials.testimonials }}
+      <div class="spo-testimonial-card">
+        <div class="spo-stars">{{ range seq .rating }}★{{ end }}</div>
+        <p class="spo-testimonial-text">{{ .text }}</p>
+        <div class="spo-testimonial-name">{{ .name }}</div>
+        <div class="spo-testimonial-role">{{ .role }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ AUTHOR -->
+<section id="author" class="spo-section">
+  <div class="container">
+    <div class="spo-section-header">
+      <p class="spo-section-eyebrow">About the Author</p>
+      <h2 class="spo-section-title">Meet the Author</h2>
+    </div>
+    <div class="spo-author-grid">
+      <div>
+        <img
+          src="{{ "images/author-photo.png" | relURL }}"
+          alt="{{ .Site.Params.author.name }}"
+          class="spo-author-photo"
+        />
+      </div>
+      <div>
+        <h3 class="spo-author-name">{{ .Site.Params.author.name }}</h3>
+        <p class="spo-author-role">Senior Technical Program Manager &middot; Author &middot; Agile Coach</p>
+        <p class="spo-author-bio">{{ .Site.Params.author.bio }}</p>
+        <p class="spo-author-bio">{{ .Site.Params.author.bio2 }}</p>
+        <div class="spo-author-socials">
+          {{ with .Site.Params.author.social.website }}
+            <a href="{{ . }}" class="spo-social-link" target="_blank" rel="noopener">🌐 Website</a>
+          {{ end }}
+          {{ with .Site.Params.author.social.newsletter }}
+            <a href="{{ . }}" class="spo-social-link" target="_blank" rel="noopener">✉️ Newsletter</a>
+          {{ end }}
+          {{ with .Site.Params.author.social.podcast }}
+            <a href="{{ . }}" class="spo-social-link" target="_blank" rel="noopener">🎙️ Podcast</a>
+          {{ end }}
+        </div>
+        <p class="spo-other-books-label">Other books by this author</p>
+        <p class="spo-other-books-list">The Agile Field Guide &nbsp;&middot;&nbsp; Crafting Winning Resumes &nbsp;&middot;&nbsp; Cracking Amazon&rsquo;s Behavioral Interviews &nbsp;&middot;&nbsp; How to Launch Your Own Podcast</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ BUY NOW -->
+<section id="buy-now" class="spo-section spo-section-alt">
+  <div class="container">
+    <div class="spo-section-header">
+      <p class="spo-section-eyebrow">Get the Book</p>
+      <h2 class="spo-section-title">Get Your Copy Today</h2>
+      <p class="spo-section-sub">Choose your preferred format and start your journey to becoming a true Entrepreneurial Product Owner.</p>
+    </div>
+    <div class="spo-buy-grid">
+      {{ range .Site.Data.buy.formats }}
+      <div class="spo-buy-card{{ if .popular }} spo-buy-card--popular{{ end }}">
+        {{ if .popular }}<span class="spo-popular-badge">Most Popular</span>{{ end }}
+        <div class="spo-buy-format">{{ .name }}</div>
+        <div class="spo-buy-platform">{{ .platform }}</div>
+        {{ if .sale_price }}
+          <div class="spo-price-old">{{ .price }}</div>
+          <div class="spo-price">{{ .sale_price }}</div>
+        {{ else }}
+          <div class="spo-price">{{ .price }}</div>
+        {{ end }}
+        <a
+          href="{{ .url }}"
+          class="spo-btn {{ if .popular }}spo-btn-primary{{ else }}spo-btn-teal{{ end }}"
+          target="_blank"
+          rel="noopener"
+        >Buy Now</a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ FAQ -->
+<section id="faq" class="spo-section">
+  <div class="container">
+    <div class="spo-section-header">
+      <p class="spo-section-eyebrow">Common Questions</p>
+      <h2 class="spo-section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="spo-faq-list">
+      {{ range .Site.Data.faq.faqs }}
+      <div class="spo-faq-item">
+        <button class="spo-faq-q" onclick="spoToggleFaq(this)">
+          {{ .question }}
+          <span class="spo-faq-icon">+</span>
+        </button>
+        <div class="spo-faq-a">{{ .answer }}</div>
+      </div>
+      {{ end }}
+    </div>
+    <div class="spo-newsletter-box">
+      <h3 class="spo-newsletter-title">Stay Updated on Agile Best Practices</h3>
+      <p class="spo-newsletter-desc">Subscribe to <strong>The Agile Chronicles</strong> newsletter for practical Agile tips, case studies, and insights delivered to your inbox.</p>
+      <a href="{{ .Site.Params.author.social.newsletter }}" class="spo-btn spo-btn-teal" target="_blank" rel="noopener">Subscribe Free &rarr;</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,17 @@
+[[testimonials]]
+name   = "Priya S."
+role   = "Product Owner, Bangalore"
+text   = "The 7-day study plan was exactly what I needed. Passed on my first attempt with 91%. The cram sheets alone are worth the price."
+rating = 5
+
+[[testimonials]]
+name   = "Marcus T."
+role   = "Scrum Master transitioning to PO"
+text   = "Unlike other certification guides, this one explains the WHY behind every concept. The EBM section completely changed how I think about product value."
+rating = 5
+
+[[testimonials]]
+name   = "Ananya R."
+role   = "Senior Business Analyst"
+text   = "The entrepreneurial mindset framing is brilliant. I didn't just prepare for the exam — I fundamentally understood what it means to be a real Product Owner."
+rating = 5

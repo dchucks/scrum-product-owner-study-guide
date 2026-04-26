@@ -1,0 +1,68 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Scrum Product Owner Certification Study Guide"
+theme = "book-landing-hugo-theme"
+
+[taxonomies]
+tag = ""
+category = ""
+
+[params]
+description = "Master Value Maximization and Strategic Leadership. A Structured Path to Certification Success and Professional Excellence."
+isbn = "ISBN: 978-93-5602-015-3"
+
+[params.author]
+name = "Debashish Chakrabarty"
+image = "/images/author-photo.png"
+bio = "Debashish Chakrabarty is a Senior Technical Program Manager with over 24 years of experience delivering complex, large-scale software systems at industry leaders like Amazon, AWS, and Accenture. A certified PMP, Scrum Master (CSM), and Product Owner, he has spent decades leading distributed Agile teams, driving cloud-native development, and orchestrating enterprise-level Agile transformations."
+bio2 = "Through his writing at the Agile Chronicles, he distills hard-won lessons from high-stakes environments into practical, actionable guidance that teams can apply immediately. In this guide, he leverages his extensive background to help professionals move beyond theory and master the entrepreneurial leadership required to succeed in the modern product landscape."
+
+[params.author.social]
+website    = "https://debashish.com"
+newsletter = "https://agilechronicles.substack.com/"
+podcast    = "https://youtube.com/@agilechronicles"
+
+[params.contact]
+email      = "contact@podbharati.com"
+contactUrl = "https://podbharati.com/contact/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+[[menu.main]]
+name   = "Home"
+url    = "#home"
+weight = 1
+
+[[menu.main]]
+name   = "About"
+url    = "#about-book"
+weight = 2
+
+[[menu.main]]
+name   = "What's Inside"
+url    = "#what-inside"
+weight = 3
+
+[[menu.main]]
+name   = "Reviews"
+url    = "#testimonials"
+weight = 4
+
+[[menu.main]]
+name   = "Author"
+url    = "#author"
+weight = 5
+
+[[menu.main]]
+name   = "Buy Now"
+url    = "#buy-now"
+weight = 6
+
+[[menu.main]]
+name   = "FAQ"
+url    = "#faq"
+weight = 7

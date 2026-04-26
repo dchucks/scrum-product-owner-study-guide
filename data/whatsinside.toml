@@ -1,0 +1,35 @@
+[[items]]
+title = "The 7-Day Fast-Track"
+description = "A structured, day-by-day roadmap designed to take you from foundational concepts to exam readiness in one week."
+
+[[items]]
+title = "High-Retention Visuals"
+description = "12 beautifully designed cram sheets for rapid, last-minute revision of all core Scrum competencies."
+
+[[items]]
+title = "Scaling for the Enterprise"
+description = "Advanced insights into managing a single product across multiple teams using scaling frameworks such as Nexus."
+
+[[items]]
+title = "Strategic Success Models"
+description = "Practical deep dives into Evidence-Based Management and the DEEP/INVEST models for backlog health."
+
+[[items]]
+title = "Elite Test Preparation"
+description = "Build confidence with over two dozen focus-area questions and a full-length 80-question practice test that mirrors the actual exam's 85% passing score difficulty."
+
+[[audiences]]
+role = "Aspiring Product Owners"
+description = "Building foundational knowledge of the Scrum framework and the PO accountability"
+
+[[audiences]]
+role = "Transitioning Leaders"
+description = "Moving from project management into strategic product ownership"
+
+[[audiences]]
+role = "Experienced Practitioners"
+description = "Seeking to validate and formalize expertise with a recognized certification"
+
+[[audiences]]
+role = "Agile Coaches & Scrum Masters"
+description = "Deepening understanding of the Product Owner's strategic accountability"
