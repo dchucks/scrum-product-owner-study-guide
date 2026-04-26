@@ -1,55 +1,179 @@
 /*
- * scrum-po-theme.css
- * Book-specific styles for the Scrum PO Certification Study Guide.
+ * scrum-style.css
+ * Loaded AFTER the theme's style.css.
+ * Overrides CSS variables and specific selectors to re-skin the
+ * book-landing-hugo-theme with the Scrum PO book's color palette.
  *
- * ALL classes are prefixed `spo-` so they never collide with the shared
- * theme's classes. This file loads AFTER the theme's own CSS, so it can
- * also selectively override theme variables/selectors where needed.
- *
- * Color palette derived from the book cover:
- *   --spo-yellow  #c8e63c   yellow-green  (cover title text)
- *   --spo-teal    #3ecfb2   teal/cyan     (cover target image)
- *   --spo-gold    #f0a830   warm gold     (accent / stars)
- *   --spo-dark    #1a2010   dark olive    (hero background)
- *   --spo-mid     #232b15   section bg
- *   --spo-card    #2a3419   card bg
+ * Book cover palette:
+ *   Yellow-green  #c8e63c  — primary accent / headings
+ *   Teal          #3ecfb2  — secondary accent / links
+ *   Gold          #f0a830  — stars / badges
+ *   Dark olive    #1a2010  — page background
+ *   Mid olive     #232b15  — alternate section bg
+ *   Card          #2a3419  — card background
  */
 
-/* ── CSS custom properties ───────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════
+   1. CSS VARIABLE OVERRIDES
+   These replace the theme's blue/green palette globally.
+   ═══════════════════════════════════════════════════════════ */
 :root {
-  --spo-yellow:      #c8e63c;
-  --spo-yellow-dk:   #9ab52a;
-  --spo-teal:        #3ecfb2;
-  --spo-teal-dk:     #2aaa90;
-  --spo-gold:        #f0a830;
-  --spo-dark:        #1a2010;
-  --spo-mid:         #232b15;
-  --spo-card:        #2a3419;
-  --spo-card-hover:  #32401e;
-  --spo-text:        #f0ede3;
-  --spo-muted:       #a8b890;
-  --spo-border:      rgba(200, 230, 60, 0.18);
-  --spo-border-card: rgba(200, 230, 60, 0.22);
-  --spo-radius:      12px;
-  --spo-radius-sm:   6px;
-  --spo-radius-lg:   20px;
-  --spo-shadow:      0 4px 24px rgba(0, 0, 0, 0.45);
-  --spo-transition:  0.2s ease;
+  /* Book palette */
+  --spo-yellow:     #c8e63c;
+  --spo-yellow-dk:  #9ab52a;
+  --spo-teal:       #3ecfb2;
+  --spo-teal-dk:    #2aaa90;
+  --spo-gold:       #f0a830;
+  --spo-dark:       #1a2010;
+  --spo-mid:        #232b15;
+  --spo-card:       #2a3419;
+  --spo-card-hover: #32401e;
+  --spo-text:       #f0ede3;
+  --spo-muted:      #a8b890;
+  --spo-border:     rgba(200, 230, 60, 0.18);
+  --spo-border-c:   rgba(200, 230, 60, 0.25);
+  --spo-radius:     12px;
+  --spo-radius-sm:  6px;
+  --spo-radius-lg:  20px;
+  --spo-shadow:     0 4px 24px rgba(0, 0, 0, 0.45);
+  --spo-ease:       0.2s ease;
 
-  /* Override the shared theme's primary color variables so nav/footer
-     pick up the new palette without touching the theme files */
-  --primary-color:   var(--spo-yellow);
-  --accent-color:    var(--spo-teal);
-  --bg-color:        var(--spo-dark);
-  --text-color:      var(--spo-text);
-  --muted-color:     var(--spo-muted);
+  /* Override theme's own variables so its components pick up new colours */
+  --primary-color:   #c8e63c;
+  --primary-dark:    #9ab52a;
+  --primary-light:   #d4ee6a;
+  --secondary-color: #3ecfb2;
+  --accent-color:    #3ecfb2;
+  --background:          #1a2010;
+  --background-alt:      #232b15;
+  --background-dark:     #2a3419;
+  --text-dark:       #f0ede3;
+  --text-medium:     #a8b890;
+  --text-light:      #7a9060;
+  --border-color:    rgba(200, 230, 60, 0.2);
 }
 
-/* ── Shared utilities ────────────────────────────────────────── */
-.spo-section        { padding: 80px 0; background: var(--spo-dark); }
-.spo-section-alt    { background: var(--spo-mid); border-top: 1px solid var(--spo-border); border-bottom: 1px solid var(--spo-border); }
+/* ═══════════════════════════════════════════════════════════
+   2. GLOBAL / BODY
+   ═══════════════════════════════════════════════════════════ */
+body {
+  background-color: var(--spo-dark) !important;
+  color: var(--spo-text);
+}
 
-.spo-section-header { text-align: center; margin-bottom: 52px; }
+a {
+  color: var(--spo-teal);
+}
+a:hover {
+  color: var(--spo-yellow);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   3. NAV — recolour the theme's .navbar
+   ═══════════════════════════════════════════════════════════ */
+.navbar {
+  background-color: rgba(26, 32, 16, 0.96) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--spo-border);
+  box-shadow: none !important;
+}
+
+/* Tighten nav to prevent wrapping */
+.navbar .container {
+  padding: 0.6rem 20px;          /* less vertical padding = shorter bar */
+}
+
+.nav-brand a {
+  font-size: 1rem !important;    /* was 1.5rem — shrinks the book title */
+  white-space: nowrap;
+}
+.nav-brand a:hover {
+  color: var(--spo-yellow-dk) !important;
+}
+
+.nav-menu {
+  gap: 1rem !important;        /* was 2rem — tighten spacing between links */
+}
+
+.nav-menu a {
+  font-size: 0.97rem !important;  /* was default ~1rem */
+  padding: 4px 6px;              /* reduce click-area padding so items sit closer */
+  white-space: nowrap;           /* stop "What's Inside" and "Buy Now" wrapping */
+  color: var(--spo-muted) !important;
+}
+
+.nav-menu a:hover {
+  color: var(--spo-yellow) !important;
+}
+.nav-menu a::after {
+  background-color: var(--spo-yellow) !important;
+}
+
+.mobile-toggle span {
+  background-color: var(--spo-text) !important;
+}
+
+/* Mobile nav dropdown */
+@media (max-width: 768px) {
+  .nav-menu {
+    background-color: var(--spo-mid) !important;
+    border-top: 1px solid var(--spo-border);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   4. FOOTER — recolour the theme's .footer
+   ═══════════════════════════════════════════════════════════ */
+.footer {
+  background-color: var(--spo-mid) !important;
+  border-top: 1px solid var(--spo-border);
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: var(--spo-teal) !important;
+}
+
+.footer-section p {
+  color: var(--spo-muted) !important;
+}
+
+.footer-section a {
+  color: var(--spo-muted) !important;
+}
+.footer-section a:hover {
+  color: var(--spo-yellow) !important;
+}
+
+.footer-bottom {
+  color: var(--spo-muted) !important;
+  border-top-color: var(--spo-border) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   5. SECTIONS — our custom spo- sections
+   ═══════════════════════════════════════════════════════════ */
+.spo-section {
+  padding: 80px 0;
+  background: var(--spo-dark);
+}
+.spo-section-alt {
+  background: var(--spo-mid);
+  border-top: 1px solid var(--spo-border);
+  border-bottom: 1px solid var(--spo-border);
+}
+
+/* Override the theme's global "section" padding so our sections control themselves */
+section.spo-section,
+section.spo-section.spo-section-alt {
+  padding: 80px 0;
+}
+
+.spo-section-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
 .spo-section-eyebrow {
   display: block;
   font-size: 0.72rem;
@@ -59,10 +183,21 @@
   color: var(--spo-teal);
   margin-bottom: 10px;
 }
-.spo-section-title  { color: var(--spo-yellow); line-height: 1.15; margin-bottom: 14px; }
-.spo-section-sub    { color: var(--spo-muted); font-size: 1.05rem; max-width: 600px; margin: 0 auto; }
+.spo-section-title {
+  color: var(--spo-yellow);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+.spo-section-sub {
+  color: var(--spo-muted);
+  font-size: 1.02rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-/* ── Buttons ─────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════
+   6. BUTTONS
+   ═══════════════════════════════════════════════════════════ */
 .spo-btn {
   display: inline-block;
   padding: 13px 30px;
@@ -70,7 +205,7 @@
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
-  transition: all var(--spo-transition);
+  transition: all var(--spo-ease);
   text-decoration: none;
   border: 2px solid transparent;
   text-align: center;
@@ -83,7 +218,7 @@
 .spo-btn-primary:hover {
   background: var(--spo-yellow-dk);
   border-color: var(--spo-yellow-dk);
-  color: var(--spo-dark);
+  color: var(--spo-dark) !important;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(200, 230, 60, 0.3);
 }
@@ -94,28 +229,31 @@
 }
 .spo-btn-outline:hover {
   border-color: var(--spo-teal);
-  color: var(--spo-teal);
+  color: var(--spo-teal) !important;
 }
 .spo-btn-teal {
   background: var(--spo-teal);
   color: var(--spo-dark);
   border-color: var(--spo-teal);
+  font-weight: 700;
 }
 .spo-btn-teal:hover {
   background: var(--spo-teal-dk);
   border-color: var(--spo-teal-dk);
-  color: var(--spo-dark);
+  color: var(--spo-dark) !important;
   transform: translateY(-2px);
 }
 
-/* ── Hero ────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════
+   7. HERO
+   ═══════════════════════════════════════════════════════════ */
 .spo-hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding-top: 64px;
   background:
-    radial-gradient(ellipse at 70% 50%, rgba(62, 207, 178, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse at 72% 50%, rgba(62, 207, 178, 0.07) 0%, transparent 60%),
     radial-gradient(ellipse at 15% 80%, rgba(200, 230, 60, 0.05) 0%, transparent 50%),
     var(--spo-dark);
 }
@@ -124,36 +262,41 @@
   grid-template-columns: 1fr 360px;
   gap: 60px;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .spo-eyebrow {
   display: inline-block;
   background: rgba(200, 230, 60, 0.1);
-  border: 1px solid var(--spo-border-card);
+  border: 1px solid var(--spo-border-c);
   color: var(--spo-yellow);
   font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
   padding: 5px 14px;
   border-radius: 100px;
   margin-bottom: 18px;
 }
 .spo-hero-title {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 800;
   color: var(--spo-yellow);
-  line-height: 1.05;
+  line-height: 1.04;
   margin-bottom: 10px;
-  text-shadow: 0 0 60px rgba(200, 230, 60, 0.15);
+  text-shadow: 0 0 60px rgba(200, 230, 60, 0.14);
 }
 .spo-hero-subtitle {
   color: var(--spo-teal);
-  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-size: clamp(0.95rem, 1.8vw, 1.22rem);
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
 .spo-hero-desc {
   color: var(--spo-muted);
-  font-size: 1.02rem;
+  font-size: 1rem;
   line-height: 1.8;
   max-width: 540px;
   margin-bottom: 12px;
@@ -165,9 +308,16 @@
   margin-bottom: 32px;
   opacity: 0.65;
 }
-.spo-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
-
-.spo-book-wrap { position: relative; display: flex; justify-content: center; }
+.spo-ctas {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.spo-book-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 .spo-book-img {
   width: 100%;
   max-width: 320px;
@@ -197,7 +347,9 @@
   box-shadow: 0 4px 16px rgba(240, 168, 48, 0.4);
 }
 
-/* ── Features ────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════
+   8. FEATURES GRID
+   ═══════════════════════════════════════════════════════════ */
 .spo-features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -205,10 +357,10 @@
 }
 .spo-feature-card {
   background: var(--spo-card);
-  border: 1px solid var(--spo-border-card);
+  border: 1px solid var(--spo-border-c);
   border-radius: var(--spo-radius);
   padding: 28px 22px;
-  transition: all var(--spo-transition);
+  transition: all var(--spo-ease);
 }
 .spo-feature-card:hover {
   background: var(--spo-card-hover);
@@ -220,17 +372,19 @@
 .spo-feature-title { font-size: 1.1rem; font-weight: 700; color: var(--spo-text); margin-bottom: 8px; }
 .spo-feature-desc  { color: var(--spo-muted); font-size: 0.88rem; line-height: 1.7; }
 
-/* ── What's Inside ───────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════
+   9. WHAT'S INSIDE
+   ═══════════════════════════════════════════════════════════ */
 .spo-inside-grid  { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
 .spo-inside-intro { color: var(--spo-muted); margin-bottom: 24px; font-size: 1rem; }
-.spo-inside-list  { list-style: none; }
+.spo-inside-list  { list-style: none; padding: 0; }
 .spo-inside-item  { display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--spo-border); }
 .spo-inside-item:last-child { border-bottom: none; }
 .spo-inside-bullet {
   flex-shrink: 0;
   width: 26px; height: 26px;
   background: rgba(200, 230, 60, 0.12);
-  border: 1px solid var(--spo-border-card);
+  border: 1px solid var(--spo-border-c);
   border-radius: 50%;
   margin-top: 2px;
   position: relative;
@@ -249,13 +403,13 @@
 
 .spo-audience-box {
   background: var(--spo-card);
-  border: 1px solid var(--spo-border-card);
+  border: 1px solid var(--spo-border-c);
   border-radius: var(--spo-radius-lg);
   padding: 32px;
   margin-bottom: 20px;
 }
 .spo-audience-title { color: var(--spo-teal); font-weight: 700; font-size: 1.1rem; margin-bottom: 20px; }
-.spo-audience-list  { list-style: none; }
+.spo-audience-list  { list-style: none; padding: 0; }
 .spo-audience-list li {
   padding: 12px 0;
   border-bottom: 1px solid var(--spo-border);
@@ -269,7 +423,7 @@
 
 .spo-stat-box {
   background: var(--spo-card);
-  border: 1px solid var(--spo-border-card);
+  border: 1px solid var(--spo-border-c);
   border-radius: var(--spo-radius);
   padding: 24px;
   text-align: center;
@@ -277,15 +431,17 @@
 .spo-stat-number { font-size: 3rem; font-weight: 800; color: var(--spo-yellow); line-height: 1; }
 .spo-stat-label  { color: var(--spo-muted); font-size: 0.85rem; margin-top: 8px; }
 
-/* ── Testimonials ────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════
+   10. TESTIMONIALS
+   ═══════════════════════════════════════════════════════════ */
 .spo-testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .spo-testimonial-card {
   background: var(--spo-card);
-  border: 1px solid var(--spo-border-card);
+  border: 1px solid var(--spo-border-c);
   border-radius: var(--spo-radius);
   padding: 26px 22px;
 }
-.spo-stars           { color: var(--spo-gold); letter-spacing: 2px; font-size: 0.95rem; margin-bottom: 12px; }
+.spo-stars { color: var(--spo-gold); letter-spacing: 2px; font-size: 0.95rem; margin-bottom: 12px; }
 .spo-testimonial-text {
   color: var(--spo-text);
   font-size: 0.93rem;
@@ -293,16 +449,25 @@
   margin-bottom: 18px;
   font-style: italic;
 }
-.spo-testimonial-text::before { content: '\201C'; color: var(--spo-teal); font-size: 1.4rem; font-style: normal; line-height: 0; vertical-align: -0.3em; }
+.spo-testimonial-text::before {
+  content: '\201C';
+  color: var(--spo-teal);
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: 0;
+  vertical-align: -0.3em;
+}
 .spo-testimonial-name { font-weight: 700; color: var(--spo-yellow); font-size: 0.875rem; }
 .spo-testimonial-role { color: var(--spo-muted); font-size: 0.78rem; }
 
-/* ── Author ──────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════
+   11. AUTHOR
+   ═══════════════════════════════════════════════════════════ */
 .spo-author-grid   { display: grid; grid-template-columns: 260px 1fr; gap: 52px; align-items: start; }
 .spo-author-photo  {
   width: 100%;
   border-radius: var(--spo-radius-lg);
-  border: 3px solid var(--spo-border-card);
+  border: 3px solid var(--spo-border-c);
   box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(62,207,178,0.08);
 }
 .spo-author-name   { color: var(--spo-yellow); font-size: 2rem; font-weight: 800; margin-bottom: 4px; line-height: 1.1; }
@@ -311,31 +476,41 @@
 .spo-author-socials { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; }
 .spo-social-link {
   padding: 7px 18px;
-  border: 1px solid var(--spo-border-card);
+  border: 1px solid var(--spo-border-c);
   border-radius: 100px;
   color: var(--spo-muted);
   font-size: 0.82rem;
   text-decoration: none;
-  transition: all var(--spo-transition);
+  transition: all var(--spo-ease);
 }
-.spo-social-link:hover { border-color: var(--spo-teal); color: var(--spo-teal); }
-.spo-other-books-label { color: var(--spo-teal); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 32px; margin-bottom: 8px; }
-.spo-other-books-list  { color: var(--spo-muted); font-size: 0.875rem; }
+.spo-social-link:hover { border-color: var(--spo-teal); color: var(--spo-teal) !important; }
+.spo-other-books-label {
+  color: var(--spo-teal);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+.spo-other-books-list { color: var(--spo-muted); font-size: 0.875rem; }
 
-/* ── Buy Now ─────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════
+   12. BUY NOW (custom cards, not theme's buy-card)
+   ═══════════════════════════════════════════════════════════ */
 .spo-buy-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 .spo-buy-card {
   background: var(--spo-card);
-  border: 1px solid var(--spo-border-card);
+  border: 1px solid var(--spo-border-c);
   border-radius: var(--spo-radius);
-  padding: 28px 18px;
+  padding: 32px 20px;
   text-align: center;
   position: relative;
-  transition: all var(--spo-transition);
+  transition: all var(--spo-ease);
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -343,7 +518,7 @@
 .spo-buy-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--spo-shadow);
-  border-color: rgba(200, 230, 60, 0.32);
+  border-color: rgba(200, 230, 60, 0.35);
 }
 .spo-buy-card--popular {
   border-color: var(--spo-yellow);
@@ -351,7 +526,7 @@
 }
 .spo-popular-badge {
   position: absolute;
-  top: -12px;
+  top: -13px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--spo-yellow);
@@ -367,10 +542,12 @@
 .spo-buy-format   { font-weight: 700; color: var(--spo-text); font-size: 1rem; margin-bottom: 2px; }
 .spo-buy-platform { color: var(--spo-muted); font-size: 0.78rem; margin-bottom: 14px; }
 .spo-price-old    { color: var(--spo-muted); text-decoration: line-through; font-size: 0.88rem; }
-.spo-price        { color: var(--spo-yellow); font-size: 1.8rem; font-weight: 800; margin-bottom: 16px; line-height: 1; }
+.spo-price        { color: var(--spo-yellow); font-size: 1.9rem; font-weight: 800; margin-bottom: 18px; line-height: 1; }
 .spo-buy-card .spo-btn { width: 100%; margin-top: auto; }
 
-/* ── FAQ ─────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════
+   13. FAQ
+   ═══════════════════════════════════════════════════════════ */
 .spo-faq-list { max-width: 740px; margin: 0 auto; }
 .spo-faq-item {
   border: 1px solid var(--spo-border);
@@ -378,7 +555,7 @@
   margin-bottom: 10px;
   overflow: hidden;
 }
-.spo-faq-item:hover { border-color: var(--spo-border-card); }
+.spo-faq-item:hover { border-color: var(--spo-border-c); }
 .spo-faq-q {
   width: 100%;
   background: var(--spo-card);
@@ -393,21 +570,21 @@
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  transition: background var(--spo-transition);
+  transition: background var(--spo-ease);
   font-family: inherit;
 }
 .spo-faq-q:hover { background: var(--spo-card-hover); }
 .spo-faq-icon {
   flex-shrink: 0;
   width: 22px; height: 22px;
-  border: 1px solid var(--spo-border-card);
+  border: 1px solid var(--spo-border-c);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
   color: var(--spo-yellow);
-  transition: transform var(--spo-transition);
+  transition: transform var(--spo-ease);
   line-height: 1;
 }
 .spo-faq-a {
@@ -420,12 +597,12 @@
   transition: max-height 0.3s ease, padding 0.3s ease;
   padding: 0 22px;
 }
-.spo-faq-item.spo-open .spo-faq-a   { max-height: 400px; padding: 18px 22px; }
+.spo-faq-item.spo-open .spo-faq-a    { max-height: 400px; padding: 18px 22px; }
 .spo-faq-item.spo-open .spo-faq-icon { transform: rotate(45deg); }
 
 .spo-newsletter-box {
   background: var(--spo-card);
-  border: 1px solid var(--spo-border-card);
+  border: 1px solid var(--spo-border-c);
   border-radius: var(--spo-radius-lg);
   padding: 40px;
   text-align: center;
@@ -434,7 +611,9 @@
 .spo-newsletter-title { color: var(--spo-yellow); font-weight: 800; font-size: 1.4rem; margin-bottom: 10px; }
 .spo-newsletter-desc  { color: var(--spo-muted); margin-bottom: 22px; }
 
-/* ── Responsive ──────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════
+   14. RESPONSIVE
+   ═══════════════════════════════════════════════════════════ */
 @media (max-width: 960px) {
   .spo-hero-grid         { grid-template-columns: 1fr; }
   .spo-book-wrap         { order: -1; }
@@ -447,7 +626,13 @@
   .spo-testimonials-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {
+  .spo-hero-grid     { padding: 0 16px; }
   .spo-features-grid { grid-template-columns: 1fr; }
   .spo-buy-grid      { grid-template-columns: 1fr; }
   .spo-section       { padding: 56px 0; }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   15. FAQ JS HELPER
+   (inline script in main.js calls spoToggleFaq — defined there)
+   ═══════════════════════════════════════════════════════════ */
