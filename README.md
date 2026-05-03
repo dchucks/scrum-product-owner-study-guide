@@ -1,5 +1,5 @@
-# The Agile Field Guide
-Official Website of my book Agile Field Guide
-https://agile-field-guide.netlify.app/
+# Scrum Product Owner Certification Study Guide
+Official Website of my book "Scrum Product Owner Certification Study Guide"
+https://scrum-product-owner-study-guide.netlify.app/
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/159b97d9-b2c8-4896-89f9-6ffed9b4c7da/deploy-status)](https://app.netlify.com/projects/agile-field-guide/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/af304f36-b798-4778-b4ae-73df620049bc/deploy-status)](https://app.netlify.com/projects/scrum-product-owner-study-guide/deploys)
