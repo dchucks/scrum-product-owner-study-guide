@@ -1,29 +1,29 @@
 [[features]]
 icon = "🎯"
-title = "12 Core Competencies"
-description = "A practitioner-led roadmap covering every Focus Area evaluated in the Scrum Product Owner certification — from empiricism and self-managing teams to business strategy and forecasting."
+title = "All 12 Exam Focus Areas"
+description = "Complete coverage of every competency evaluated in the Scrum Product Owner certification — from empiricism and self-managing teams to business strategy, forecasting, and stakeholder engagement. Nothing skipped, nothing padded."
 
 [[features]]
 icon = "⚡"
 title = "7-Day Fast-Track Plan"
-description = "A structured, day-by-day study roadmap designed to take you from foundational concepts to full exam readiness in one week."
+description = "A structured, day-by-day study roadmap that takes you from foundational concepts to full exam readiness in one week — with clear daily reading targets, practice questions, and revision priorities."
 
 [[features]]
 icon = "🏆"
-title = "80-Question Practice Test"
-description = "A full-length mock exam mirroring the actual certification's 85% passing score difficulty, with detailed answer explanations for every question."
+title = "Full-Length Practice Test"
+description = "An 80-question mock exam at 85% passing score difficulty — the same bar as the real certification — with detailed explanations for every answer so you understand why, not just what."
 
 [[features]]
-icon = "📊"
-title = "Evidence-Based Management"
-description = "Deep dives into EBM's four Key Value Areas (CV, UV, T2M, A2I) and the DEEP and INVEST models for world-class backlog health."
+icon = "🏢"
+title = "Real-World Practitioner Frameworks"
+description = "Written by an Amazon TPM, this guide integrates industry-proven tools — Amazon's PR/FAQ and Two-Way Door model, HEART metrics, OKRs, and outcome-based roadmaps — mapped chapter by chapter to the exam competencies where they apply."
 
 [[features]]
 icon = "🚀"
-title = "Scaling for the Enterprise"
-description = "Advanced insights into managing a single Product Backlog across multiple Scrum teams using scaling frameworks such as Nexus."
+title = "Beyond Scrum Theory"
+description = "Covers the Product Management Vacuum, a three-layer strategy framework (business → portfolio → product), Extended Product Team for stakeholder engagement, and how outcome-based roadmaps and temporal frameworks work together — not against each other."
 
 [[features]]
 icon = "🌱"
-title = "Entrepreneurial Mindset"
-description = "Move beyond the 'Scribe' and 'Proxy' anti-patterns to become a true Entrepreneurial Product Owner who maximizes strategic value."
+title = "Scaling for the Enterprise"
+description = "Advanced insights into managing a single Product Backlog across multiple Scrum teams, with practical guidance on portfolio strategy and how large organisations align product goals across teams without losing empiricism."

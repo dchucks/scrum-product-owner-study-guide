@@ -5,13 +5,13 @@
   <div class="container">
     <div class="spo-hero-grid">
       <div class="spo-hero-content">
-        <span class="spo-eyebrow">Certification Study Guide</span>
+        <span class="spo-eyebrow">Become a Certified Product Owner in just one week</span>
         <h1 class="spo-hero-title">
           Scrum Product Owner<br>
           Certification<br>
           Study Guide
         </h1>
-        <p class="spo-hero-subtitle">A Structured Path to Certification Success and Professional Excellence</p>
+        <p class="spo-hero-subtitle">A Structured Path to Certification Success & Professional Excellence</p>
         <p class="spo-hero-desc">
           The Scrum Product Owner certification is widely recognized as a strong validation of your ability to act as the strategic brain behind a product. To succeed in a complex, empirical world, you must bridge the &ldquo;Product Management Vacuum&rdquo; by mastering the &ldquo;Three Vs&rdquo;: Vision, Value, and Validation.
         </p>
@@ -62,7 +62,7 @@
     </div>
     <div class="spo-inside-grid">
       <div>
-        <p class="spo-inside-intro">Inside, you&rsquo;ll find the tools to master both the exam and the role:</p>
+        <p class="spo-inside-intro">Inside, you&rsquo;ll find the tools to master both the certification test and the role:</p>
         <ul class="spo-inside-list">
           {{ range .Site.Data.whats_inside.items }}
           <li class="spo-inside-item">
@@ -88,15 +88,15 @@
           </ul>
         </div>
         <div class="spo-stat-box">
-          <p class="spo-stat-number">85%</p>
-          <p class="spo-stat-label">Practice test mirrors the actual exam passing score difficulty</p>
+          <p class="spo-stat-number">Authored by an Amazon TPM</p>
+          <p class="spo-stat-label">24 years of real-world product leadership: not an academic trainer who just teaches Scrum, but a practitioner who lives it</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════ TESTIMONIALS -->
+<!-- ══════════════════════════ TESTIMONIALS 
 <section id="testimonials" class="spo-section spo-section-alt">
   <div class="container">
     <div class="spo-section-header">
@@ -115,44 +115,7 @@
     </div>
   </div>
 </section>
-
-<!-- ══════════════════════════ AUTHOR -->
-<section id="author" class="spo-section">
-  <div class="container">
-    <div class="spo-section-header">
-      <p class="spo-section-eyebrow">About the Author</p>
-      <h2 class="spo-section-title">Meet the Author</h2>
-    </div>
-    <div class="spo-author-grid">
-      <div>
-        <img
-          src="{{ "images/author-photo.png" | relURL }}"
-          alt="{{ .Site.Params.author.name }}"
-          class="spo-author-photo"
-        />
-      </div>
-      <div>
-        <h3 class="spo-author-name">{{ .Site.Params.author.name }}</h3>
-        <p class="spo-author-role">Senior Technical Program Manager &middot; Author &middot; Agile Coach</p>
-        <p class="spo-author-bio">{{ .Site.Params.author.bio }}</p>
-        <p class="spo-author-bio">{{ .Site.Params.author.bio2 }}</p>
-        <div class="spo-author-socials">
-          {{ with .Site.Params.author.social.website }}
-            <a href="{{ . }}" class="spo-social-link" target="_blank" rel="noopener">🌐 Website</a>
-          {{ end }}
-          {{ with .Site.Params.author.social.newsletter }}
-            <a href="{{ . }}" class="spo-social-link" target="_blank" rel="noopener">✉️ Newsletter</a>
-          {{ end }}
-          {{ with .Site.Params.author.social.podcast }}
-            <a href="{{ . }}" class="spo-social-link" target="_blank" rel="noopener">🎙️ Podcast</a>
-          {{ end }}
-        </div>
-        <p class="spo-other-books-label">Other books by this author</p>
-        <p class="spo-other-books-list">The Agile Field Guide &nbsp;&middot;&nbsp; Crafting Winning Resumes &nbsp;&middot;&nbsp; Cracking Amazon&rsquo;s Behavioral Interviews &nbsp;&middot;&nbsp; How to Launch Your Own Podcast</p>
-      </div>
-    </div>
-  </div>
-</section>
+-->
 
 <!-- ══════════════════════════ BUY NOW -->
 <section id="buy-now" class="spo-section spo-section-alt">
@@ -186,6 +149,83 @@
   </div>
 </section>
 
+
+<!-- ══════════════════════════ AUTHOR -->
+<section id="author" class="spo-section">
+  <div class="container">
+    <div class="spo-section-header">
+      <p class="spo-section-eyebrow">About the Author</p>
+      <h2 class="spo-section-title">Meet the Author</h2>
+    </div>
+    <div class="spo-author-grid">
+      <div>
+        <img
+          src="{{ "images/author-photo.png" | relURL }}"
+          alt="{{ .Site.Params.author.name }}"
+          class="spo-author-photo"
+        />
+      </div>
+      <div>
+        <h3 class="spo-author-name">{{ .Site.Params.author.name }}</h3>
+        <p class="spo-author-role">Senior Technical Program Manager &middot; Author &middot; Agile Coach</p>
+        <p class="spo-author-bio">{{ .Site.Params.author.bio }}</p>
+        <p class="spo-author-bio">{{ .Site.Params.author.bio2 }}</p>
+        <div class="spo-author-socials">
+          {{ with .Site.Params.author.social.website }}
+            <a href="{{ . }}" class="spo-social-link" target="_blank" rel="noopener">🌐 Website</a>
+          {{ end }}
+          {{ with .Site.Params.author.social.newsletter }}
+            <a href="{{ . }}" class="spo-social-link" target="_blank" rel="noopener">✉️ Newsletter</a>
+          {{ end }}
+          {{ with .Site.Params.author.social.podcast }}
+            <a href="{{ . }}" class="spo-social-link" target="_blank" rel="noopener">🎙️ Podcast</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Other Publications ── -->
+	<div class="spo-pubs">
+	  <h3 class="spo-pubs-title">Author's Other Publications</h3>
+	  <div class="spo-pubs-grid">
+		{{ range .Site.Data.otherbooks.books }}
+		<div class="spo-pub-card">
+		  <div class="spo-pub-cover-wrap">
+			{{ if .book_website }}
+			<a href="{{ .book_website }}" class="spo-pub-link" target="_blank">
+			{{ end }}
+			<img
+			  src="{{ .cover | relURL }}"
+			  alt="{{ .title }}"
+			  class="spo-pub-cover"
+			  loading="lazy"
+			/>
+			{{ if .book_website }}
+			</a>
+			{{ end }}
+		  </div>
+		  <div class="spo-pub-info">
+			<h4 class="spo-pub-title">{{ .title }}</h4>
+			<p class="spo-pub-desc">{{ .description }}</p>
+			{{ if .links }}
+			<div class="spo-pub-links">
+			  {{ range .links }}
+				{{ if .url }}
+				<a href="{{ .url }}" class="spo-pub-link" target="_blank" rel="noopener">{{ .label }} &rarr;</a>
+				{{ end }}
+			  {{ end }}
+			</div>
+			{{ end }}
+		  </div>
+		</div>
+		{{ end }}
+	  </div>
+	</div>
+
+  </div>
+</section>
+
+
 <!-- ══════════════════════════ FAQ -->
 <section id="faq" class="spo-section">
   <div class="container">
@@ -205,10 +245,17 @@
       {{ end }}
     </div>
     <div class="spo-newsletter-box">
-	  <h3 class="spo-newsletter-title">Stay Updated on Agile Best Practices</h3>
-	  <p class="spo-newsletter-desc">Subscribe to <strong>The Agile Chronicles</strong> newsletter ...</p>
-	  <iframe src="https://agilechronicles.substack.com/embed" width="480" height="320" style="border: 1px solid #EEE;" frameborder="0" scrolling="no"></iframe>
-	</div>
+      <h3 class="spo-newsletter-title">Stay Updated on Agile Best Practices</h3>
+      <p class="spo-newsletter-desc">Subscribe to <strong>The Agile Chronicles</strong> newsletter for practical Agile tips, case studies, and insights delivered to your inbox.</p>
+      <iframe
+        src="https://agilechronicles.substack.com/embed"
+        width="480"
+        height="150"
+        style="border:none; background:transparent; max-width:100%;"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </div>
   </div>
 </section>
 

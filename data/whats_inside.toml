@@ -1,22 +1,26 @@
 [[items]]
-title = "The 7-Day Fast-Track"
-description = "A structured, day-by-day roadmap designed to take you from foundational concepts to exam readiness in one week."
+title = "12 Focus Area Chapters"
+description = "One chapter per certification competency, each structured as: concept explanation, what you need to know for the exam, and practice questions with full answer rationale."
 
 [[items]]
-title = "High-Retention Visuals"
-description = "12 beautifully designed cram sheets for rapid, last-minute revision of all core Scrum competencies."
+title = "7-Day Study Plan"
+description = "A day-by-day schedule with specific reading targets, question counts, and must-memorise vs must-internalise distinctions for every day of preparation."
 
 [[items]]
-title = "Scaling for the Enterprise"
-description = "Advanced insights into managing a single product across multiple teams using scaling frameworks such as Nexus."
+title = "Cram Sheets"
+description = "Over a dozen visual revision sheet, each designed for rapid last-minute review of definitions, rules, and examiner traps for each competency."
 
 [[items]]
-title = "Strategic Success Models"
-description = "Practical deep dives into Evidence-Based Management and the DEEP/INVEST models for backlog health."
+title = "Practice Questions Throughout"
+description = "Over two dozen focus-area questions embedded in the chapters, each with a full explanation of why the correct answer is right and why the distractors are wrong."
 
 [[items]]
-title = "Elite Test Preparation"
-description = "Build confidence with over two dozen focus-area questions and a full-length 80-question practice test that mirrors the actual exam's 85% passing score difficulty."
+title = "80-Question, full-length, Practice Test"
+description = "A complete mock exam at the end of the guide, timed for 60 minutes, with answer explanations referenced back to the relevant chapter sections."
+
+[[items]]
+title = "Practitioner Frameworks Brief"
+description = "A quick-reference table mapping industry frameworks (PR/FAQ, Two-Way Door, HEART, OKRs, strategy stack) to the specific exam focus areas where each is most relevant."
 
 [[audiences]]
 role = "Aspiring Product Owners"
@@ -33,3 +37,7 @@ description = "Seeking to validate and formalize expertise with a recognized cer
 [[audiences]]
 role = "Agile Coaches & Scrum Masters"
 description = "Deepening understanding of the Product Owner's strategic accountability"
+
+[[audiences]]
+role = "Engineering Managers & Tech Leads"
+description = "Transitioning into product leadership or collaborating closely with Product Owners and seeking to understand strategic product accountability from a practitioner's perspective"

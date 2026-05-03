@@ -1,27 +1,61 @@
 [[books]]
-title = "पॉडकास्टिंग कैसे करें? How to launch your own Podcast?"
+title       = "पॉडकास्टिंग कैसे करें? How to Launch Your Own Podcast?"
 description = "Whether you are a student, a professional, a homemaker, or a retiree, this book gives you everything you need to launch and grow your own podcast with confidence."
-cover = "/images/other-books/podcasting-guide-cover.jpg"
-buyUrl = "https://www.amazon.in/dp/9334292393"
-price = "₹399"
+cover       = "/images/other-books/podcasting-guide-cover.jpg"
+book_website = "https://podcasting-guide.netlify.app/"
+
+  [[books.links]]
+  label = "Amazon Paperback"
+  url   = "https://www.amazon.in/dp/9334292393"
+
+  [[books.links]]
+  label = "Kindle"
+  url   = "https://www.amazon.in/dp/9334292393"
 
 [[books]]
-title = "Crafting Winning Resumes"
+title       = "Crafting Winning Resumes"
 description = "A practical, no-fluff guide that teaches IT professionals how to build resumes that pass ATS filters, impress hiring managers, and open doors to global opportunities."
-cover = "/images/other-books/crafting-winning-resume-cover.jpg"
-buyUrl = "https://topmate.io/debashishc/1302753/pay"
-price = "₹250"
+cover       = "/images/other-books/crafting-winning-resume-cover.jpg"
+
+  [[books.links]]
+  label = "Amazon Paperback"
+  url   = "https://www.amazon.in/dp/B0C8XYZ123"
+
+  [[books.links]]
+  label = "Pothi.com"
+  url   = "https://store.pothi.com/book/debashish-chakrabarty-crafting-winning-resumes/"
+
+  [[books.links]]
+  label = "eBook"
+  url   = "https://topmate.io/debashishc/1302753/pay"
 
 [[books]]
-title = "Cracking Amazon's Behavioral Interviews"
+title       = "Cracking Amazon's Behavioral Interviews"
 description = "Don't let the complexity of Amazon's LPs hold you back. Unlock the roadmap to mastering Amazon's behavioral interviews and set yourself apart from the competition."
-cover = "/images/other-books/cracking-amazon-interview.jpg"
-buyUrl = "https://amzn.in/d/h0P93uP"
-price = "₹350"
+cover       = "/images/other-books/cracking-amazon-interview.jpg"
+
+  [[books.links]]
+  label = "Amazon Paperback"
+  url   = "https://amzn.in/d/h0P93uP"
+
+  [[books.links]]
+  label = "Kindle"
+  url   = "https://amzn.in/d/h0P93uP"
 
 [[books]]
-title = "The PSPO-I Certification Study Guide for Diligent Professionals"
-description = "COMING SOON!"
-cover = "/images/other-books/pspo-study-guide.jpg"
-buyUrl = ""
-price = ""
+title       = "The Agile Field Guide"
+description = "A practitioner's companion to navigating real-world Agile challenges — from team dynamics to enterprise transformations. Written for those who want results, not just ceremonies."
+cover       = "/images/other-books/agile-field-guide-cover.jpg"
+book_website = "https://agile-field-guide.netlify.app/"
+
+  [[books.links]]
+  label = "Amazon Paperback"
+  url   = "https://www.amazon.in/dp/9354690173"
+
+  [[books.links]]
+  label = "Kindle"
+  url   = "https://www.amazon.in/dp/B0G35V389J"
+
+  [[books.links]]
+  label = "Pothi.com"
+  url   = "https://store.pothi.com/book/debashish-chakrabarty-agile-field-guide/"

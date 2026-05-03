@@ -9,16 +9,16 @@ category = ""
 
 [params]
 description = "Master Value Maximization and Strategic Leadership. A Structured Path to Certification Success and Professional Excellence."
-isbn = "ISBN: 978-93-5602-015-3"
+isbn = "ISBN: 978-93-5811-810-0"
 
 [params.author]
 name = "Debashish Chakrabarty"
 image = "/images/author-photo.png"
-bio = "Debashish Chakrabarty is a Senior Technical Program Manager with over 24 years of experience delivering complex, large-scale software systems at industry leaders like Amazon, AWS, and Accenture. A certified PMP, Scrum Master (CSM), and Product Owner, he has spent decades leading distributed Agile teams, driving cloud-native development, and orchestrating enterprise-level Agile transformations."
-bio2 = "Through his writing at the Agile Chronicles, he distills hard-won lessons from high-stakes environments into practical, actionable guidance that teams can apply immediately. In this guide, he leverages his extensive background to help professionals move beyond theory and master the entrepreneurial leadership required to succeed in the modern product landscape."
+bio = "Debashish Chakrabarty is a Senior Technical Program Manager at Amazon with over 24 years of experience delivering complex, large-scale software systems. He brings firsthand practitioner perspective to bridge the gap between certification preparation and how product ownership works at scale in real organisations. A certified PMP, Scrum Master (CSM), and Product Owner (PSPO-I), he has spent decades leading distributed Agile teams, driving cloud-native development, and orchestrating enterprise-level Agile transformations."
+bio2 = "Through his writing at the 'Agile Chronicles', he distills hard-won lessons from high-stakes environments into practical, actionable guidance that teams can apply immediately. In this guide, he leverages his extensive background to help professionals move beyond theory and master the entrepreneurial leadership required to succeed in the modern product landscape."
 
 [params.author.social]
-website    = "https://debashish.com"
+website    = "https://topmate.io/debashishc"
 newsletter = "https://agilechronicles.substack.com/"
 podcast    = "https://youtube.com/@agilechronicles"
 
@@ -53,7 +53,7 @@ url    = "#testimonials"
 weight = 4
 
 [[menu.main]]
-name   = "Author"
+name   = "Meet the Author"
 url    = "#author"
 weight = 5
 
