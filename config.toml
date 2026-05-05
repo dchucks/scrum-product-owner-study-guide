@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://scrum-product-owner-study-guide.netlify.app/"
 languageCode = "en-us"
 title = "Scrum Product Owner Certification Study Guide"
 theme = "book-landing-hugo-theme"
