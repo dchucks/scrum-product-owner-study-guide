@@ -1,43 +1,43 @@
 [[formats]]
 name       = "eBook (PDF)"
 platform   = "Available Worldwide"
-price      = "₹499"
-sale_price = "₹299"
-url        = "https://topmate.io/debashishc/1471769"
+price      = "₹749"
+sale_price = "₹949"
+#url        = "https://topmate.io/debashishc/1471769"
 popular    = true
 
 [[formats]]
 name     = "Paperback"
 platform = "Available on Amazon India"
 price    = "₹399"
-url      = "https://www.amazon.in/dp/9354690173"
+#url      = "https://www.amazon.in/dp/9354690173"
 popular  = false
 
 [[formats]]
 name     = "Paperback"
 platform = "Available on Flipkart India"
 price    = "₹399"
-url      = "https://www.flipkart.com/agile-field-guide-starter-kit-real-world/p/itmcae60e304a637?pid=9789354690174"
+#url      = "https://www.flipkart.com/agile-field-guide-starter-kit-real-world/p/itmcae60e304a637?pid=9789354690174"
 popular  = false
 
 [[formats]]
 name     = "Paperback"
 platform = "Available via Pothi.com in India"
 price    = "₹399"
-url      = "https://store.pothi.com/book/debashish-chakrabarty-agile-field-guide/"
+#url      = "https://store.pothi.com/book/debashish-chakrabarty-agile-field-guide/"
 popular  = false
 
 [[formats]]
-name       = "Amazon Kindle"
+name       = "📱Amazon Kindle"
 platform   = "Available Worldwide"
-price      = "₹499"
-sale_price = "₹299"
-url        = "https://www.amazon.in/dp/B0G35V389J"
+price      = "₹749"
+#sale_price = "₹299"
+url        = "https://amzn.in/d/05KMxHX1"
 popular    = false
 
 [[formats]]
-name     = "Paperback"
+name     = "📖 Amazon Paperback"
 platform = "Available Worldwide on Amazon (except India)"
-price    = "$8.25"
-url      = "https://a.co/d/8b9gwP5"
+price    = "$11.99"
+url      = "https://a.co/d/007g4oIp"
 popular  = false

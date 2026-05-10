@@ -89,7 +89,7 @@
         </div>
         <div class="spo-stat-box">
           <p class="spo-stat-number">Authored by an Amazon TPM</p>
-          <p class="spo-stat-label">24 years of real-world product leadership: not an academic trainer who just teaches Scrum, but a practitioner who lives it</p>
+          <p class="spo-stat-label">24 years of real-world product leadership: a practitioner who lives it</p>
         </div>
       </div>
     </div>
@@ -122,11 +122,12 @@
   <div class="container">
     <div class="spo-section-header">
       <p class="spo-section-eyebrow">Get the Book</p>
-      <h2 class="spo-section-title">Get Your Copy Today</h2>
+      <h2 class="spo-section-title">Book Your Copy Today</h2>
       <p class="spo-section-sub">Choose your preferred format and start your journey to becoming a true Entrepreneurial Product Owner.</p>
     </div>
     <div class="spo-buy-grid">
       {{ range .Site.Data.buy.formats }}
+	  {{ if .url }}
       <div class="spo-buy-card{{ if .popular }} spo-buy-card--popular{{ end }}">
         {{ if .popular }}<span class="spo-popular-badge">Most Popular</span>{{ end }}
         <div class="spo-buy-format">{{ .name }}</div>
@@ -144,6 +145,7 @@
           rel="noopener"
         >Buy Now</a>
       </div>
+	  {{ end }}
       {{ end }}
     </div>
   </div>
