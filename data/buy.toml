@@ -23,8 +23,8 @@ popular  = false
 [[formats]]
 name     = "Paperback"
 platform = "Available via Pothi.com in India"
-price    = "₹399"
-#url      = "https://store.pothi.com/book/debashish-chakrabarty-agile-field-guide/"
+price    = "₹749"
+url      = "https://store.pothi.com/book/debashish-chakrabarty-scrum-product-owner-certification-study-guide/"
 popular  = false
 
 [[formats]]
