@@ -1,5 +1,5 @@
 [[formats]]
-name       = "eBook (PDF)"
+name       = "📱eBook (PDF)"
 platform   = "Available Worldwide"
 price      = "₹749"
 sale_price = "₹949"
@@ -7,14 +7,14 @@ sale_price = "₹949"
 popular    = true
 
 [[formats]]
-name     = "Paperback"
+name     = "📖 Paperback"
 platform = "Available on Amazon India"
 price    = "₹399"
 #url      = "https://www.amazon.in/dp/9354690173"
 popular  = false
 
 [[formats]]
-name     = "Paperback"
+name     = "📖 Paperback"
 platform = "Available on Flipkart India"
 price    = "₹399"
 #url      = "https://www.flipkart.com/agile-field-guide-starter-kit-real-world/p/itmcae60e304a637?pid=9789354690174"
@@ -23,23 +23,23 @@ popular  = false
 [[formats]]
 name     = "Paperback"
 platform = "Available via Pothi.com in India"
-price    = "₹749"
-sale_price = "1785"
+sale_price    = "₹749"
+price = "1785"
 url      = "https://store.pothi.com/book/debashish-chakrabarty-scrum-product-owner-certification-study-guide/"
-popular  = false
+popular  = true
 
 [[formats]]
 name       = "📱Amazon Kindle"
 platform   = "Available Worldwide"
-price      = "₹649"
-sale_price = "1545"
+sale_price      = "₹649"
+price = "1545"
 url        = "https://amzn.in/d/05KMxHX1"
 popular    = false
 
 [[formats]]
 name     = "📖 Amazon Paperback"
-platform = "Available Worldwide on Amazon (except India)"
-price    = "$11.99"
-sale_price = "$28.50"
+platform = "Available Worldwide on Amazon sites (except India)"
+sale_price    = "$11.99"
+price = "$28.50"
 url      = "https://a.co/d/007g4oIp"
 popular  = false
