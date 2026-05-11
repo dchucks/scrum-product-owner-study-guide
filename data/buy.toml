@@ -24,14 +24,15 @@ popular  = false
 name     = "Paperback"
 platform = "Available via Pothi.com in India"
 price    = "₹749"
+sale_price = "1785"
 url      = "https://store.pothi.com/book/debashish-chakrabarty-scrum-product-owner-certification-study-guide/"
 popular  = false
 
 [[formats]]
 name       = "📱Amazon Kindle"
 platform   = "Available Worldwide"
-price      = "₹749"
-#sale_price = "₹299"
+price      = "₹649"
+sale_price = "1545"
 url        = "https://amzn.in/d/05KMxHX1"
 popular    = false
 
@@ -39,5 +40,6 @@ popular    = false
 name     = "📖 Amazon Paperback"
 platform = "Available Worldwide on Amazon (except India)"
 price    = "$11.99"
+sale_price = "$28.50"
 url      = "https://a.co/d/007g4oIp"
 popular  = false
