@@ -2,44 +2,68 @@
 name       = "📱eBook (PDF)"
 platform   = "Available Worldwide"
 price      = "₹749"
-sale_price = "₹949"
+#sale_price = "₹949"
 #url        = "https://topmate.io/debashishc/1471769"
 popular    = true
 
 [[formats]]
-name     = "📖 Paperback"
-platform = "Available on Amazon India"
-price    = "₹399"
-#url      = "https://www.amazon.in/dp/9354690173"
-popular  = false
-
-[[formats]]
-name     = "📖 Paperback"
-platform = "Available on Flipkart India"
-price    = "₹399"
-#url      = "https://www.flipkart.com/agile-field-guide-starter-kit-real-world/p/itmcae60e304a637?pid=9789354690174"
-popular  = false
-
-[[formats]]
-name     = "Paperback"
-platform = "Available via Pothi.com in India"
+name     = "India Paperback (Pothi)"
+platform = "Available via Pothi.com all over India"
 sale_price    = "₹749"
-price = "1785"
+#price = "1785"
 url      = "https://store.pothi.com/book/debashish-chakrabarty-scrum-product-owner-certification-study-guide/"
-popular  = true
+popular  = false
+
+[[formats]]
+name     = "📖 India Paperback (Flipkart)"
+platform = "Available on Flipkart all over India"
+price    = "COMING SOON!"
+url      = "https://scrum-product-owner-study-guide.netlify.app/"
+popular  = false
+
+[[formats]]
+name     = "📖 India Paperback (Amazon)"
+platform = "Available on Amazon India"
+price    = "COMING SOON!"
+url      = "https://scrum-product-owner-study-guide.netlify.app/"
+popular  = false
 
 [[formats]]
 name       = "📱Amazon Kindle"
 platform   = "Available Worldwide"
+sale_price      = "$9.99"
+#price = "1545"
+url        = "https://www.amazon.in/dp/B0GX34LZ2M"
+popular    = false
+
+[[formats]]
+name       = "📱Amazon Kindle"
+platform   = "Available in India"
 sale_price      = "₹649"
-price = "1545"
-url        = "https://amzn.in/d/05KMxHX1"
+#price = "1545"
+url        = "https://www.amazon.in/dp/B0GX34LZ2M"
 popular    = false
 
 [[formats]]
 name     = "📖 Amazon Paperback"
 platform = "Available Worldwide on Amazon sites (except India)"
 sale_price    = "$11.99"
-price = "$28.50"
-url      = "https://a.co/d/007g4oIp"
+#price = "$28.50"
+url      = "https://www.amazon.com/dp/9356020159"
+popular  = true
+
+[[formats]]
+name     = "📙 Amazon Hardcover"
+platform = "Available Worldwide on Amazon sites (except India)"
+sale_price    = "$19.99"
+#price = "$28.50"
+url      = "https://www.amazon.com/dp/B0H55DMLJ8"
+popular  = false
+
+[[formats]]
+name     = "🎯 Additional PSPO-I Mock Tests (320 questions)"
+platform = "Available Worldwide on Udemy"
+sale_price    = "₹479"
+price = "₹799"
+url      = "https://www.udemy.com/course/product-owner-certification-mock-tests/?referralCode=47D3E39E87005D7F13ED"
 popular  = false

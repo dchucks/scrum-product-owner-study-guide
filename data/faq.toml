@@ -15,6 +15,10 @@ question = "Will this help me pass the certification exam?"
 answer   = "The guide is structured around the 12 core competency focus areas of the Scrum Product Owner certification, includes a full-length 80-question practice test at 85% difficulty, and provides a proven 7-day study plan."
 
 [[faqs]]
+question = "Are there additional mock questions available that I could ue to practice?"
+answer   = "Yes, the author has publish a test battery at Udemy for this purpose (soon to be expanded to 8 full length tests). You can buy them at https://tinyurl.com/udemy-pspo1 (or use the Buy button above)."
+
+[[faqs]]
 question = "Does it cover scaling Scrum?"
 answer   = "Yes. The appendix covers scaling frameworks including Nexus, and the main content includes guidance on managing a single Product Backlog across multiple Scrum Teams."
 
