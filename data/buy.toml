@@ -29,7 +29,7 @@ url      = "https://scrum-product-owner-study-guide.netlify.app/"
 popular  = false
 
 [[formats]]
-name       = "📱Amazon Kindle"
+name       = "📱Amazon Kindle (ASIN: B0GX34LZ2M)"
 platform   = "Available Worldwide"
 sale_price      = "$9.99"
 #price = "1545"
@@ -45,15 +45,15 @@ url        = "https://www.amazon.in/dp/B0GX34LZ2M"
 popular    = false
 
 [[formats]]
-name     = "📖 Amazon Paperback"
+name     = "📖 Amazon Paperback (ASIN: 9358118105)"
 platform = "Available Worldwide on Amazon sites (except India)"
 sale_price    = "$11.99"
 #price = "$28.50"
-url      = "https://www.amazon.com/dp/9356020159"
+url      = "https://www.amazon.com/dp/9358118105"
 popular  = true
 
 [[formats]]
-name     = "📙 Amazon Hardcover"
+name     = "📙 Amazon Hardcover (ASIN: B0H55DMLJ8)"
 platform = "Available Worldwide on Amazon sites (except India)"
 sale_price    = "$19.99"
 #price = "$28.50"
