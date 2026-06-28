@@ -17,15 +17,16 @@ popular  = false
 [[formats]]
 name     = "📖 India Paperback (Flipkart)"
 platform = "Available on Flipkart all over India"
-price    = "COMING SOON!"
-url      = "https://scrum-product-owner-study-guide.netlify.app/"
+sale_price = "₹674"
+price    = "₹749"
+url      = "https://www.flipkart.com/scrum-product-owner-certification-study-guide-structured-path-success-professional-excellence/p/itmdc6dc05320c65?pid=9798903303809"
 popular  = false
 
 [[formats]]
 name     = "📖 India Paperback (Amazon)"
 platform = "Available on Amazon India"
-price    = "COMING SOON!"
-url      = "https://scrum-product-owner-study-guide.netlify.app/"
+price    = "₹749"
+url      = "https://www.amazon.in/dp/B0H6SGK4TP"
 popular  = false
 
 [[formats]]
@@ -37,7 +38,7 @@ url        = "https://www.amazon.in/dp/B0GX34LZ2M"
 popular    = false
 
 [[formats]]
-name       = "📱Amazon Kindle"
+name       = "📱Amazon Kindle (ASIN: B0GX34LZ2M)"
 platform   = "Available in India"
 sale_price      = "₹649"
 #price = "1545"

@@ -1,0 +1,48 @@
+{{ $freebies := site.Data.freebies }}
+
+<section class="freebies-section" id="{{ $freebies.section_anchor }}">
+  <div class="freebies-container spo-section">
+    <div class="freebies-inner">
+
+      <div class="freebies-header">
+        <span class="freebies-eyebrow">Reader Toolkit</span>
+        <h2 class="freebies-title">{{ $freebies.section_title }}</h2>
+        <p class="freebies-subtitle">{{ $freebies.section_subtitle }}</p>
+      </div>
+
+      <div class="freebies-grid">
+        {{ range $freebies.resources }}
+        <div class="freebie-card">
+
+          <div class="freebie-thumb-wrap">
+			<a href="{{ .gumroad_url }}" target="_blank" rel="noopener">
+            <img
+              src="{{ .thumbnail }}"
+              alt="{{ .thumbnail_alt }}"
+              class="freebie-thumb"
+              loading="lazy"
+            />
+			</a>
+            <span class="freebie-badge {{ .badge_class }}">
+              {{ .badge }}
+            </span>
+          </div>
+
+          <div class="freebie-body">
+            <h3 class="freebie-card-title">{{ .title }}</h3>
+            <p class="freebie-card-desc">{{ .description }}</p>
+          </div>
+
+          <div class="freebie-footer">
+            <a href="{{ .gumroad_url }}" class="freebie-btn {{ .cta_class }}" {{ if .download }}download{{ else }}target="_blank" rel="noopener"{{ end }}>
+              {{ .cta_label }} →
+            </a>
+          </div>
+
+        </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</section>

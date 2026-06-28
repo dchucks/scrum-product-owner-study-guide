@@ -843,3 +843,179 @@ section {
 @media (max-width: 500px) {
     .spo-pubs-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   19. PRACTITIONER RESOURCES (FREEBIES) SECTION
+   Palette: identical to the rest of the site.
+   Naming: follows the spo- prefix convention.
+   ═══════════════════════════════════════════════════════════ */
+
+/* Section — !important beats the generic `section` rule at line ~220 */
+.freebies-section {
+    background: #eef0e8 !important;
+    background-image: none !important;
+    border-top: 0.5px solid #dde3d0;
+    border-bottom: 0.5px solid #dde3d0;
+    padding: 80px 0;
+}
+
+/* Inner content wrapper — matches spo-section max-width and padding */
+.freebies-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---- Header ---- */
+.freebies-header {
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.freebies-eyebrow {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #2aaa90;
+    margin-bottom: 10px;
+}
+
+.freebies-title {
+    color: #3a4a20;
+    line-height: 1.15;
+    margin-bottom: 14px;
+}
+
+.freebies-subtitle {
+    color: #6a7a50;
+    font-size: 1.02rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ---- Card Grid ---- */
+.freebies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ---- Individual Card — matches .spo-feature-card style ---- */
+.freebie-card {
+    background: #ffffff !important;
+    border: 0.5px solid #dde3d0 !important;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 4px rgba(58, 74, 32, 0.05);
+}
+
+.freebie-card:hover {
+    border-color: #c8e63c !important;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(58, 74, 32, 0.10) !important;
+}
+
+/* ---- Thumbnail — light olive fallback so no dark flash ---- */
+.freebie-thumb-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #eef0e8;
+    overflow: hidden;
+}
+
+.freebie-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.freebie-card:hover .freebie-thumb {
+    transform: scale(1.03);
+}
+
+/* Badge — yellow-green pill matching .popular-badge / .spo-book-badge */
+.freebie-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 0.67rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1a2010;
+    background: #c8e63c;
+    padding: 4px 12px;
+    border-radius: 100px;
+    box-shadow: 0 3px 10px rgba(200, 230, 60, 0.35);
+}
+
+/* ---- Card Body ---- */
+.freebie-body {
+    padding: 22px 22px 14px;
+    flex: 1;
+}
+
+.freebie-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #3a4a20 !important;
+    margin: 0 0 8px;
+    line-height: 1.35;
+}
+
+.freebie-card-desc {
+    font-size: 0.875rem;
+    color: #6a7a50 !important;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ---- Card Footer / CTA ---- */
+.freebie-footer {
+    padding: 14px 22px 22px;
+    border-top: 0.5px solid #dde3d0;
+}
+
+/* CTA — teal, matching .buy-button / .spo-btn-teal */
+.freebie-btn {
+    display: inline-block;
+    background: #2aaa90 !important;
+    color: #ffffff !important;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    border: 2px solid #2aaa90;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 14px rgba(42, 170, 144, 0.3);
+}
+
+.freebie-btn:hover {
+    background: #1e8a74 !important;
+    border-color: #1e8a74 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(42, 170, 144, 0.4) !important;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 960px) {
+    .freebies-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .freebies-section { padding: 56px 0; }
+    .freebies-grid { grid-template-columns: 1fr; }
+}

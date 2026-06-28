@@ -49,9 +49,9 @@ url    = "#what-inside"
 weight = 3
 
 [[menu.main]]
-name   = "Reviews"
-url    = "#testimonials"
-weight = 4
+#name   = "Reviews"
+#url    = "#testimonials"
+#weight = 4
 
 [[menu.main]]
 name   = "Meet the Author"
@@ -64,6 +64,11 @@ url    = "#buy-now"
 weight = 6
 
 [[menu.main]]
-name   = "FAQ"
-url    = "#faq"
+name   = "Freebies"
+url    = "#freebies"
 weight = 7
+
+[[menu.main]]
+name   = "FAQs"
+url    = "#faq"
+weight = 8

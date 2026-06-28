@@ -1,0 +1,38 @@
+section_title: "Free Practitioner Resources"
+section_subtitle: "Straight from the trenches. No fluff, no filler — just tools that help you think, prepare, and lead like a real Product Owner."
+section_anchor: "freebies"
+
+resources:
+  - id: crossword
+    title: "Scrum PO Crossword Challenge"
+    description: "Not your Sunday-paper crossword. Two hard puzzles built for the diligent PO — a deceptively effective way to cement concepts you'll actually be tested on. Fair warning: these will humble you before the exam does."
+    badge: "Brain Workout"
+    badge_class: ""
+    thumbnail: "/images/freebies/crossword-thumb.png"
+    thumbnail_alt: "Scrum PO Crossword Challenge"
+    cta_label: "Get the Puzzles"
+    cta_class: ""
+    gumroad_url: "https://debashishc.gumroad.com/l/pspo-study-planner"
+
+  - id: study-tracker
+    title: "The 7-Day Study Tracker"
+    description: "The structured day-by-day plan from inside the book, now as a standalone printable. Tracks your daily reading targets, question counts, and must-memorise vs must-internalise priorities — so you never lose your place in the sprint."
+    badge: "From the Book"
+    badge_class: ""
+    thumbnail: "/images/freebies/tracker-thumb.png"
+    thumbnail_alt: "7-Day Study Tracker preview"
+    cta_label: "Get the Tracker"
+    cta_class: ""
+    gumroad_url: "/images/freebies/1-Week-Study-Plan-PSPO.png"
+    download: true
+
+  - id: scenario-pack
+    title: "Product Owner in the Wild"
+    description: "10 real-world scenarios ripped from the kind of organisations where Scrum actually gets messy — startups, enterprises, regulated industries, distributed teams. Four choices per scenario. One practitioner's take per answer. No textbook-safe language anywhere."
+    badge: "From the Trenches"
+    badge_class: ""
+    thumbnail: "/images/freebies/scenario-thumb.png"
+    thumbnail_alt: "Product Owner in the Wild scenario pack preview"
+    cta_label: "Get the Scenarios"
+    cta_class: ""
+    gumroad_url: "PASTE_GUMROAD_URL_HERE"
