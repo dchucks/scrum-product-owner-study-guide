@@ -34,17 +34,17 @@ contactUrl = "https://podbharati.com/contact/"
 
 [menu]
 [[menu.main]]
-name   = "Home"
+name   = "🔺Top"
 url    = "#home"
 weight = 1
 
 [[menu.main]]
-name   = "About"
+name   = "What's the Book About"
 url    = "#about-book"
 weight = 2
 
 [[menu.main]]
-name   = "What's Inside"
+name   = "Sneek Peek"
 url    = "#what-inside"
 weight = 3
 
@@ -54,17 +54,17 @@ weight = 3
 #weight = 4
 
 [[menu.main]]
-name   = "Meet the Author"
+name   = "Know the Author"
 url    = "#author"
 weight = 5
 
 [[menu.main]]
-name   = "Buy Now"
+name   = "🛍️ Buy Now"
 url    = "#buy-now"
 weight = 6
 
 [[menu.main]]
-name   = "Freebies"
+name   = "🎁 Freebies"
 url    = "#freebies"
 weight = 7
 
