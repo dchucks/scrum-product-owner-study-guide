@@ -27,12 +27,12 @@ resources:
     download: true
 
   - id: scenario-pack
-    title: "Product Owner in the Wild"
-    description: "12 real-world scenarios ripped from the kind of organisations where Scrum actually gets messy — startups, enterprises, regulated industries, distributed teams. Four choices per scenario. One practitioner's take per answer. No textbook-safe language anywhere."
+    title: "Product Owner in the Wild (eBook)"
+    description: "12 real-world scenarios from the kind of organisations where Scrum actually gets messy: startups, enterprises, regulated industries, distributed teams, et al. Four choices (if life were so simple) per scenario with a practitioner's view for you to contemplate."
     badge: "From the Trenches"
     badge_class: ""
     thumbnail: "/images/freebies/scenario-thumb.png"
     thumbnail_alt: "Product Owner in the Wild scenario pack preview"
-    cta_label: "Get the Scenarios"
+    cta_label: "Buy the eBook at 🏷️50% off"
     cta_class: ""
     gumroad_url: "https://debashishc.gumroad.com/l/po-in-the-wild"
