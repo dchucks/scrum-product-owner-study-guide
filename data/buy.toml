@@ -62,6 +62,14 @@ url      = "https://www.amazon.com/dp/B0H55DMLJ8"
 popular  = false
 
 [[formats]]
+name     = "📖 Barnes & Nobles Paperback"
+platform = "Available Worldwide"
+sale_price    = "$12"
+#price = "$28.50"
+url      = "https://www.barnesandnoble.com/w/scrum-product-owner-certification-study-guide-debashish-chakrabarty/1150480976?ean=9789356020153"
+popular  = false
+
+[[formats]]
 name     = "🎯 Additional PSPO-I Mock Tests (320 questions)"
 platform = "Available Worldwide on Udemy"
 sale_price    = "₹479"
